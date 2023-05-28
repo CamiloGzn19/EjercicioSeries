@@ -35,7 +35,7 @@ export class Serie {
         this.episodios.forEach((episode) => {
             detail += `- Nombre: ${episode.nombre}\n`;
             detail += `  Resumen: ${episode.getResumen()}\n`;
-            detail += `  Duración: ${episode.getDuracion()} minutes\n`;
+            detail += `  Duración: ${episode.getDuracion()} minutos\n`;
         });
         return detail;
     }
