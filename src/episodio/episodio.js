@@ -16,7 +16,7 @@ export class Episodio {
     getDetail() {
         let detail = `Nombre: ${this.nombre}\n`;
         detail += `Resumen: ${this.resumen}\n`;
-        detail += `Duracion: ${this.duracion} minutes\n`;
+        detail += `Duracion: ${this.duracion} minutos\n`;
         return detail;
     }
 }
