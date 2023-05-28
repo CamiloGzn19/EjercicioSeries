@@ -1,17 +1,22 @@
-import { Planes } from "./planes";
-
 export class Plataforma {
-  sitioWeb: string;
-  planes: Planes[];
+  constructor(
+    public nombre: string,
+    public website: string,
+    public planes: Plan[]
+  ) {}
 
-  constructor(sitioWeb: string) {
-    this.sitioWeb = sitioWeb;
-    this.planes = [];
+  public getDetail(): string {
+    let detail = `Nombre: ${this.nombre}\n`;
+    detail += `Website: ${this.website}\n`;
+    detail += `Planes:\n`;
+    this.planes.forEach((plan) => {
+      detail += `- Nombre: ${plan.nombre}\n`;
+      detail += `  Precio: ${plan.precio}\n`;
+    });
+    return detail;
   }
+}
 
-  
-
-  public nuevoPlan(plan: Planes) {
-    this.planes.push(plan);
-  }
+export class Plan {
+  constructor(public nombre: string, public precio: number) {}
 }
