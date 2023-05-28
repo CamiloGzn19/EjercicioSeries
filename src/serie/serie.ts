@@ -1,5 +1,5 @@
 import { Actor } from "../actor/actor";
-import { Categoria } from "../cateogira/categoria";
+import { Categoria } from "../categoria/categoria";
 import { Director } from "../director/director";
 import { Episodio } from "../episodio/episodio";
 
